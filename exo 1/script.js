@@ -1,5 +1,14 @@
 let liste = document.getElementById("liste-commissions");
-let creation = document.createElement("li");
+let input = document.getElementById("ingredients");
+let bouton = document.getElementById("bouton");
 
-creation.textContent = "Bières";
-liste.appendChild(creation);
+
+bouton.addEventListener("click", function () {
+    let creation = document.createElement("li");
+    creation.innerHTML = input.value;
+    liste.appendChild(creation);
+})
+
+
+
+
