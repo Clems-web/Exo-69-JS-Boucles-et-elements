@@ -8,14 +8,14 @@ bouton.addEventListener("click", function () {
     let creation = document.createElement("li");
     creation.innerHTML = input.value;
     liste.appendChild(creation);
-})
+});
 
 boutonSupp.addEventListener("click", function () {
     let elements = document.querySelectorAll("#liste-commissions > li");
     if (elements.length > 0) {
         elements[elements.length - 1].remove();
     }
-})
+});
 
 
 
